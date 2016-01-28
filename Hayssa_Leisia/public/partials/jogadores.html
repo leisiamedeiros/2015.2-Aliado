@@ -1,0 +1,104 @@
+
+<div class="jumbotron">
+    <h1 class="text-center">Jogo Aliado 2015.2</h1>
+    <h5 class="text-center">Historia 1</h5>
+</div>
+<div class="table-responsive">
+  <table class="">
+    <tr>
+      <th>NOME</th>
+      <th class="text-center">Ação</th>
+      <th>DADO 1</th>
+      <th>DADO 2</th>
+      <th>RESULTADO</th>
+    </tr>
+    <tr ng-repeat="jogador in jogadores | filter: filtro">
+      <td>
+        <p ng-show="{{jogador.nome == 'Jogador1'}}">{{jogador.nome}}</p>
+      </td>
+      <td class="text-center">
+        <button ng-show="{{jogador.nome == 'Jogador1'}}" ng-click="jogardado1()" class="btn btn-warning">
+          Lance Dado 1
+        </button>
+        <button ng-show="{{jogador.nome == 'Jogador1'}}" ng-click="jogardado2()" class="btn btn-warning">
+          Lance Dado 2
+        </button>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 1}}">{{dado1.valor1}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 1}}">{{dado2.valor2}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 1}}">{{dado1.valor1 + dado2.valor2}}</p>
+      </td>
+    </tr>
+    <tr ng-repeat="jogador in jogadores | filter: filtro">
+      <td>
+        <p ng-show="{{jogador.nome == 'Jogador2'}}">{{jogador.nome}}</p>
+      </td>
+      <td class="text-center">
+        <button ng-show="{{jogador.nome == 'Jogador2'}}" ng-click="jogardado3()" class="btn btn-warning">
+          Lance Dado 1
+        </button>
+        <button ng-show="{{jogador.nome == 'Jogador2'}}" ng-click="jogardado4()" class="btn btn-warning">
+          Lance Dado 2
+        </button>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 2}}">{{dado3.valor3}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 2}}">{{dado4.valor4}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 2}}">{{dado3.valor3 + dado4.valor4}}</p>
+      </td>
+    </tr>
+    <tr ng-repeat="jogador in jogadores | filter: filtro">
+      <td>
+        <p ng-show="{{jogador.nome == 'Jogador3'}}">{{jogador.nome}}</p>
+      </td>
+      <td class="text-center">
+        <button ng-show="{{jogador.nome == 'Jogador3'}}" ng-click="jogardado5()" class="btn btn-warning">
+          Lance Dado 1
+        </button>
+        <button ng-show="{{jogador.nome == 'Jogador3'}}" ng-click="jogardado6()" class="btn btn-warning">
+          Lance Dado 2
+        </button>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 3}}">{{dado5.valor5}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 3}}">{{dado6.valor6}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 3}}">{{dado5.valor5 + dado6.valor6}}</p>
+      </td>
+    </tr>
+    <tr ng-repeat="jogador in jogadores | filter: filtro">
+      <td>
+        <p ng-show="{{jogador.nome == 'Jogador4'}}">{{jogador.nome}}</p>
+      </td>
+      <td class="text-center">
+        <button ng-show="{{jogador.nome == 'Jogador4'}}" ng-click="jogardado7()" class="btn btn-warning">
+          Lance Dado 1
+        </button>
+        <button ng-show="{{jogador.nome == 'Jogador4'}}" ng-click="jogardado8()" class="btn btn-warning">
+          Lance Dado 2
+        </button>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 4}}">{{dado7.valor7}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 4}}">{{dado8.valor8}}</p>
+      </td>
+      <td>
+        <p ng-show="{{jogador._id == 4}}">{{dado7.valor7 + dado8.valor8}}</p>
+      </td>
+    </tr>
+  </table>
+</div>
